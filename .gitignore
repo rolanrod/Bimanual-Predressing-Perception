@@ -1,0 +1,28 @@
+# Generated YOLO dataset (regenerate using convert_to_yolo.py)
+yolo_dataset/
+
+# Source images (too large for Git - transfer via scp)
+img/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+
+# YOLO training outputs
+runs/
+
+# MacOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

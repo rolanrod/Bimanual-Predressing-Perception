@@ -1,0 +1,16 @@
+# YOLOv8 Dataset Configuration for Shirt Component Detection
+# Path should be absolute or relative to the location where you run training
+
+path: ./yolo_dataset
+train: train/images
+val: val/images
+
+# Number of classes
+nc: 4
+
+# Class names
+names:
+  0: hem
+  1: left sleeve
+  2: right sleeve
+  3: neck
