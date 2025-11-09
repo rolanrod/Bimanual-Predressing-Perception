@@ -75,6 +75,11 @@ def convert_bbox_to_yolo(bbox, img_width, img_height):
 def create_yolo_dataset(annotations, train_split=0.8):
     """Create YOLO dataset structure with train/val split."""
 
+    # Create directory structure
+    for split in ['train', 'val']:
+        (OUTPUT_DIR / split / 'images').mkdir(parents=True, exist_ok=True)
+        (OUTPUT_DIR / split / 'labels').mkdir(parents=True, exist_ok=True)
+
     # Get list of all image files (excluding init images)
     all_files = [f for f in annotations.keys() if 'init' not in f]
 
